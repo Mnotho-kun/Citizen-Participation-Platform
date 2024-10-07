@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styling.css"> <!-- Link to new styling -->
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <h1>Welcome Back!</h1>
+            <form id="loginForm"> <!-- Removed action and method attributes -->
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required class="new-post">
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required class="new-post">
+                </div>
+                <button type="submit" class="post-btn">Login</button>
+                <p class="redirect-text">Don't have an account? <a href="/signup">Sign up here</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

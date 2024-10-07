@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile | Citizen Platform</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">Citizen Platform</div>
+
+    <!-- Search Icon -->
+    <div class="search-icon" id="search-icon">
+        <i class="fas fa-search"></i>
+    </div>
+
+    <!-- Search Bar -->
+    <input type="text" class="search" id="search-bar" placeholder="Search...">
+
+    <!-- Hamburger Menu Icon -->
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="nav-links" id="nav-links">
+        <a href="/">Home</a>
+        <a href="/profile">Profile</a>
+        <a href="#">Notifications</a>
+        <a href="#">Settings</a>
+    </div>
+</div>
+
+
+
+  <div class="container">
+    <!-- Main Content -->
+    <div class="main-content profile-section">
+      <!-- User Info Section -->
+      <div class="user-info">
+        <img src="/images/profile-4.jpg" alt="Profile Picture" class="profile-img-large" id="profile-image">
+        <div class="user-details">
+          <h2 id="username">User Name</h2>
+          <p id="bio">This is the user bio. It describes the user briefly.</p>
+          <div class="stats">
+            <span><strong id="post-count">0</strong> Posts</span>
+            <span><strong id="followers-count">123</strong> Followers</span>
+            <span><strong id="following-count">98</strong> Following</span>
+          </div>
+          <div class="edit-profile-container">
+            <a href="/edit-profile" class="edit-profile-btn">Edit Profile</a>
+        </div>
+        </div>
+      </div>
+
+      <!-- User Posts Grid -->
+      <div class="posts-grid" id="user-posts">
+        <!-- Example Post -->
+        <div class="post-item">
+
+        </div>
+        <div class="post-item">
+         
+        </div>
+        <!-- More posts will be dynamically added here -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script> <!-- Your JS -->
+</body>
+</html>

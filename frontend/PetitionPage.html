@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Citizen Engagement Platform - Petition</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="StyleX.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">Citizen Platform</div>
+
+    <!-- Search Icon -->
+    <div class="search-icon" id="search-icon">
+        <i class="fas fa-search"></i>
+    </div>
+
+    <!-- Search Bar -->
+    <input type="text" class="search" id="search-bar" placeholder="Search...">
+
+    <!-- Hamburger Menu Icon -->
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="nav-links" id="nav-links">
+        <a href="/">Home</a>
+        <a href="/profile">Profile</a>
+        <a href="#">Notifications</a>
+        <a href="#">Settings</a>
+    </div>
+</div>
+
+
+  <!-- Petition Content -->
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="user-profile">
+        <img src="/images/profile-4.jpg" alt="Profile Picture" class="profile-img">
+        <h3 id="username">User Name</h3>
+      </div>
+      <div class="menu">
+        <a href="#">Feed</a>
+        <a href="#">Petitions</a>
+        <a href="#">Discussions</a>
+        <a href="#">My Posts</a>
+      </div>
+    </div>
+
+    <!-- Main Content for Petition -->
+    <div class="main-content">
+      <!-- Petition Details -->
+      <div class="petition-details">
+        <h1>Petition to Save the Local Park</h1>
+        <p>We are requesting the local government to halt the plans to convert our beloved community park into a shopping mall...</p>
+        <img src="/images/park-petition.jpg" alt="Park Image" class="petition-img">
+        <p class="petition-description">Our community has cherished this park for generations. Sign the petition to preserve this green space for future generations!</p>
+      </div>
+
+      <!-- Sign Petition Section -->
+      <div class="sign-petition">
+        <h3>Support this Petition</h3>
+        <input type="text" id="full-name" placeholder="Full Name" class="sign-input">
+        <input type="email" id="email" placeholder="Email Address" class="sign-input">
+        <button class="sign-btn">Sign Petition</button>
+      </div>
+
+      <!-- Signatures List -->
+      <div class="signatures-list">
+        <h3>Recent Supporters</h3>
+        <ul id="supporters">
+          <!-- Signatures will be dynamically added here -->
+          <li><i class="fa-regular fa-user"></i> John Doe</li>
+          <li><i class="fa-regular fa-user"></i> Jane Smith</li>
+        </ul>
+      </div>
+
+      <!-- Share Petition -->
+      <div class="share-petition">
+        <h3>Share this Petition</h3>
+        <button class="share-btn"><i class="fa-solid fa-share"></i> Share on Facebook</button>
+        <button class="share-btn"><i class="fa-solid fa-share"></i> Share on Twitter</button>
+        <button class="share-btn"><i class="fa-solid fa-share"></i> Copy Link</button>
+      </div>
+
+      <!-- Comments Section -->
+      <div class="comment-section">
+        <h3>Comments</h3>
+        <textarea id="comment" placeholder="Add a comment" class="comment-input"></textarea>
+        <button class="add-comment-btn">Add Comment</button>
+
+        <div class="comments-list">
+          <p><strong>Anna:</strong> This park is essential for our kids to play safely!</p>
+          <p><strong>Mike:</strong> We must protect our green spaces!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Sidebar -->
+    <div class="right-sidebar">
+      <h3>Recent Petitions</h3>
+      <ul class="petitions-list">
+        <li><a href="#">Petition to Save the River</a></li>
+        <li><a href="#">Stop the Overdevelopment</a></li>
+        <li><a href="#">Reduce Plastic Waste</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

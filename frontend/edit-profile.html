@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="Stylings.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Citizen Platform</div>
+    
+        <!-- Search Icon -->
+        <div class="search-icon" id="search-icon">
+            <i class="fas fa-search"></i>
+        </div>
+    
+      
+    
+        <!-- Hamburger Menu Icon -->
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    
+        <!-- Navigation Links -->
+        <div class="nav-links" id="nav-links">
+            <a href="/">Home</a>
+            <a href="/profile">Profile</a>
+            <a href="#">Notifications</a>
+            <a href="#">Settings</a>
+        </div>
+    </div>
+    
+    
+
+    <div class="container">
+        <div class="main-content">
+            <h2>Edit Profile</h2>
+            <div class="profile-section">
+                <div class="user-info">
+                    <div class="profile-img-container">
+                        <label for="file-input">
+                            <img src="/images/profile-4.jpg" alt="Profile Image" class="profile-img" id="profile-img">
+                            <span class="fa-solid fa-pen edit-icon"></span>
+                        </label>
+                        <input type="file" accept="image/*" id="file-input" class="file-input">
+                    </div>
+                    <div class="user-details">
+                        <h2 id="username">Username</h2>
+                        <p id="bio">Short bio or description about yourself.</p>
+                    </div>
+                </div>
+                <form id="edit-profile-form">
+                    <div class="input-group">
+                        <label for="new-username">New Username</label>
+                        <input type="text" id="new-username" placeholder="Enter your new username">
+                    </div>
+                    <div class="input-group">
+                        <label for="new-bio">Bio</label>
+                        <textarea id="new-bio" placeholder="Tell us about yourself..."></textarea>
+                    </div>
+                   
+                    <button type="submit" class="save-btn">Save Changes</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

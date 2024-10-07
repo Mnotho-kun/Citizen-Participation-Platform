@@ -1,0 +1,94 @@
+/* Reset some default styles for a fresh start */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef; /* Light background for better contrast */
+}
+
+/* Center the container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Main Content */
+.main-content {
+    background-color: #ffffff; /* White background for forms */
+    border-radius: 12px; /* Rounded corners */
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 400px; /* Fixed width for the form */
+}
+
+/* Heading */
+h1 {
+    margin-bottom: 20px; /* Space below heading */
+    font-size: 24px; /* Larger font for the heading */
+    text-align: center; /* Centered text */
+}
+
+/* Input Groups */
+.input-group {
+    margin-bottom: 20px; /* Space between input fields */
+}
+
+/* Label for inputs */
+label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Space below label */
+    font-weight: bold; /* Bold text for labels */
+}
+
+/* Input Fields */
+.new-post {
+    width: 100%; /* Full width */
+    height: 45px; /* Taller input fields */
+    padding: 10px;
+    border: 1px solid #ced4da; /* Light border */
+    border-radius: 8px; /* Rounded edges */
+    font-size: 16px; /* Slightly larger text */
+    transition: border-color 0.3s; /* Transition effect for border */
+}
+
+/* Focus effect */
+.new-post:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove outline */
+}
+
+/* Button Styles */
+.post-btn {
+    width: 100%; /* Full width button */
+    padding: 12px;
+    background-color: #007bff; /* Primary button color */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px; /* Consistent font size */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Transition for button */
+}
+
+/* Button hover effect */
+.post-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Redirect text */
+.redirect-text {
+    margin-top: 20px; /* Space above */
+    text-align: center; /* Center the text */
+    font-size: 14px; /* Standard font size */
+}
+
+.redirect-text a {
+    color: #007bff; /* Primary color for links */
+    text-decoration: none; /* No underline */
+}
+
+/* Link hover effect */
+.redirect-text a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

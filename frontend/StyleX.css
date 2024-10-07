@@ -1,0 +1,287 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar .logo {
+    font-size: 24px;
+  }
+  
+  .navbar .search {
+    width: 40%;
+    padding: 5px;
+  }
+  
+  .navbar .nav-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .navbar .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Container */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .sidebar {
+    width: 20%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-profile {
+    text-align: center;
+  }
+  
+  .user-profile .profile-img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .menu a {
+    display: block;
+    padding: 10px 0;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .menu a:hover {
+    background-color: #f0c771;
+    color: white;
+  }
+  
+  .main-content {
+    width: 55%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .petition-details h1 {
+    font-size: 24px;
+  }
+  
+  .petition-img {
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  .sign-petition {
+    margin-top: 20px;
+  }
+  
+  .sign-input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .sign-btn {
+    background-color: #f0c771;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .signatures-list {
+    margin-top: 20px;
+  }
+  
+  .signatures-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .signatures-list li {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  .share-petition {
+    margin-top: 20px;
+  }
+  
+  .share-btn {
+    background-color: #eb6cb4;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .comment-section {
+    margin-top: 20px;
+  }
+  
+  .comment-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .add-comment-btn {
+    background-color: #f0c771;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .right-sidebar {
+    width: 20%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .petitions-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .petitions-list li {
+    margin: 10px 0;
+  }
+  
+  .petitions-list a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .petitions-list a:hover {
+    color: #eb6cb4;
+  }
+
+  
+  /* Hamburger Menu */
+.hamburger {
+  display: none; /* Hide by default */
+  cursor: pointer;
+}
+
+.search {
+  display: block;
+}
+
+
+.search-icon {
+  display: none;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+
+  .sidebar,
+  .right-sidebar {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .main-content {
+      width: 100%;
+  }
+
+  .navbar .search {
+      width: 70%;
+  }
+
+  .navbar .nav-links {
+      display: none; /* Hide nav links on small screens */
+  }
+
+  .navbar #hamburger {
+      display: block; /* Show hamburger menu */
+  }
+
+  .search-icon {
+      display: none; /* Hide search icon on small screens */
+  }
+
+  .search {
+    display: none;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.search-icon {
+    display: block;
+    cursor: pointer;
+    margin-left: auto;
+    padding: 10px;
+}
+
+#search-bar {
+    display: none;
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.sidebar, .right-sidebar{
+  width: 90%; 
+}
+
+.main-content{
+  width: 90%;
+}
+}
+
+@media (max-width: 480px) {
+  .navbar .logo {
+      font-size: 20px; /* Smaller logo text */
+  }
+
+  .navbar .search {
+      width: 80%;
+  }
+
+  .sign-input,
+  .comment-input {
+      padding: 8px;
+  }
+
+  .sign-btn,
+  .add-comment-btn,
+  .share-btn {
+      padding: 8px;
+  }
+
+  .petition-details h1 {
+      font-size: 20px; /* Smaller heading for mobile */
+  }
+}
